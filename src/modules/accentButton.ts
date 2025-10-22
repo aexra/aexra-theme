@@ -21,7 +21,7 @@ function activateStatusBarItem(context: ExtensionContext): void {
 };
 
 function activatePicker(context: ExtensionContext): void {
-    context.subscriptions.push(commands.registerCommand('samples.quickInput', async () => {
+    context.subscriptions.push(commands.registerCommand('aexra.themes.selectAccent', async () => {
         const options: Record<string, (context: ExtensionContext) => Promise<void>> = 
             Object.fromEntries(
                 Object.keys(accentProfiles).map(

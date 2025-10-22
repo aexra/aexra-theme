@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-				"command": "samples.quickInput",
-				"title": "Quick Input Samples"
+				"command": "aexra.themes.selectAccent",
+				"title": "Select Theme Accent Color"
 			}
     ]
   },
