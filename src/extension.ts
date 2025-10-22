@@ -2,8 +2,13 @@ import * as vscode from 'vscode';
 
 let accentColorStatusBarItem: vscode.StatusBarItem;
 
+let accentProfiles: Record<string, string> = {
+	"Teal": "#04afad",
+	"Magenta": "#cb2de0ff"
+}
+
 export function activate(context: vscode.ExtensionContext): void {
-	// Create status bar accent color changer
+	// Create status bar accent color manager (it will override the selected theme's accent color)
 	accentColorStatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
 
 	// Add subscriptions
@@ -15,5 +20,6 @@ export function activate(context: vscode.ExtensionContext): void {
 
 function updateStatusBarItem(): void {
 	accentColorStatusBarItem.text = "Abobabebebe";
+
 	accentColorStatusBarItem.show();
 }
