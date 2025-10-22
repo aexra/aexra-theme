@@ -1,4 +1,3 @@
-import { types } from 'util';
 import { window, commands, ExtensionContext, StatusBarItem, StatusBarAlignment } from 'vscode';
 
 let accentColorStatusBarItem: StatusBarItem;
