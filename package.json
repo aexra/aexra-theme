@@ -12,7 +12,12 @@
   "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [
+      {
+				"command": "samples.quickInput",
+				"title": "Quick Input Samples"
+			}
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
