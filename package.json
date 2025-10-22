@@ -1,5 +1,5 @@
 {
-  "name": "aexra-theme",
+  "name": "aexra.theme",
   "displayName": "Aexra Theme",
   "description": "",
   "version": "0.0.1",
@@ -9,15 +9,10 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "aexra-theme.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
